@@ -12,7 +12,6 @@
 		7C8BE171251112FB00EA25DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BE164251112FB00EA25DC /* LaunchScreen.storyboard */; };
 		7C8BE172251112FB00EA25DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BE165251112FB00EA25DC /* Main.storyboard */; };
 		7C8BE173251112FB00EA25DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BE16B251112FB00EA25DC /* Assets.xcassets */; };
-		7C8BE174251112FB00EA25DC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BE16C251112FB00EA25DC /* Info.plist */; };
 		7C8BE175251112FB00EA25DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8BE16F251112FB00EA25DC /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -323,7 +322,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C8BE174251112FB00EA25DC /* Info.plist in Resources */,
 				7C8BE171251112FB00EA25DC /* LaunchScreen.storyboard in Resources */,
 				7C8BE173251112FB00EA25DC /* Assets.xcassets in Resources */,
 				7C8BE172251112FB00EA25DC /* Main.storyboard in Resources */,
@@ -507,7 +505,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Y3EGTYSS4;
-				INFOPLIST_FILE = SWAPIApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SWAPIApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -525,7 +523,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Y3EGTYSS4;
-				INFOPLIST_FILE = SWAPIApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SWAPIApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
