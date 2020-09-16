@@ -34,6 +34,13 @@
 		7C8BE19D25120CEC00EA25DC /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8BE19C25120CEC00EA25DC /* Errors.swift */; };
 		7C8BE1A025120D4700EA25DC /* StarWarAPIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8BE19F25120D4700EA25DC /* StarWarAPIEndPoint.swift */; };
 		7C8BE1A52512123800EA25DC /* StarWarCharacterDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8BE1A42512123800EA25DC /* StarWarCharacterDataSourceTests.swift */; };
+		7C8BE1A825123DC400EA25DC /* StarWarCharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8BE1A725123DC400EA25DC /* StarWarCharacterListViewModel.swift */; };
+		7C8BE1AA2512626F00EA25DC /* StarWarCharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8BE1A92512626F00EA25DC /* StarWarCharacterListViewController.swift */; };
+		7C8BE1AC25127C8800EA25DC /* StarWarCharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8BE1AB25127C8800EA25DC /* StarWarCharacterDetailsViewController.swift */; };
+		7C8BE1AE25127CF200EA25DC /* StarWarCharacterDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8BE1AD25127CF200EA25DC /* StarWarCharacterDetailsViewModel.swift */; };
+		7C8BE1B0251284A200EA25DC /* StarWarFilmRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8BE1AF251284A200EA25DC /* StarWarFilmRepositoryProtocol.swift */; };
+		7C8BE1B22512850900EA25DC /* StarWarFilmDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8BE1B12512850900EA25DC /* StarWarFilmDataRepository.swift */; };
+		7C8BE1B42512851E00EA25DC /* StarWarFilmRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8BE1B32512851E00EA25DC /* StarWarFilmRemoteDataSource.swift */; };
 		C7861EC47846982326D2DCF0 /* Pods_SWAPIAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408A29C8C656903AAA742567 /* Pods_SWAPIAppTests.framework */; };
 		D9D9F3C532035FE2E6094419 /* Pods_SWAPIApp_SWAPIAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBA4FAFC34B314DBB88FE9D /* Pods_SWAPIApp_SWAPIAppUITests.framework */; };
 		EC95C0F238687FC72EBDF9A0 /* Pods_SWAPIApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C34C073CAB192AAA683C4E /* Pods_SWAPIApp.framework */; };
@@ -91,6 +98,13 @@
 		7C8BE19C25120CEC00EA25DC /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		7C8BE19F25120D4700EA25DC /* StarWarAPIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarAPIEndPoint.swift; sourceTree = "<group>"; };
 		7C8BE1A42512123800EA25DC /* StarWarCharacterDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarCharacterDataSourceTests.swift; sourceTree = "<group>"; };
+		7C8BE1A725123DC400EA25DC /* StarWarCharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarCharacterListViewModel.swift; sourceTree = "<group>"; };
+		7C8BE1A92512626F00EA25DC /* StarWarCharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarCharacterListViewController.swift; sourceTree = "<group>"; };
+		7C8BE1AB25127C8800EA25DC /* StarWarCharacterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarCharacterDetailsViewController.swift; sourceTree = "<group>"; };
+		7C8BE1AD25127CF200EA25DC /* StarWarCharacterDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarCharacterDetailsViewModel.swift; sourceTree = "<group>"; };
+		7C8BE1AF251284A200EA25DC /* StarWarFilmRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarFilmRepositoryProtocol.swift; sourceTree = "<group>"; };
+		7C8BE1B12512850900EA25DC /* StarWarFilmDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarFilmDataRepository.swift; sourceTree = "<group>"; };
+		7C8BE1B32512851E00EA25DC /* StarWarFilmRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarFilmRemoteDataSource.swift; sourceTree = "<group>"; };
 		99A2182384A3F41878C1B5DF /* Pods-SWAPIAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWAPIAppTests.release.xcconfig"; path = "Target Support Files/Pods-SWAPIAppTests/Pods-SWAPIAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5E6338F2D9E77B9C8C32337 /* Pods-SWAPIApp-SWAPIAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWAPIApp-SWAPIAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SWAPIApp-SWAPIAppUITests/Pods-SWAPIApp-SWAPIAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C29B21D258457F359E8DAFED /* Pods-SWAPIApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWAPIApp.release.xcconfig"; path = "Target Support Files/Pods-SWAPIApp/Pods-SWAPIApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -261,6 +275,8 @@
 		7C8BE16D251112FB00EA25DC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7C8BE1A92512626F00EA25DC /* StarWarCharacterListViewController.swift */,
+				7C8BE1AB25127C8800EA25DC /* StarWarCharacterDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -276,6 +292,8 @@
 		7C8BE170251112FB00EA25DC /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				7C8BE1A725123DC400EA25DC /* StarWarCharacterListViewModel.swift */,
+				7C8BE1AD25127CF200EA25DC /* StarWarCharacterDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -355,6 +373,9 @@
 		7C8BE1A62512369B00EA25DC /* StarWarFilmRepository */ = {
 			isa = PBXGroup;
 			children = (
+				7C8BE1AF251284A200EA25DC /* StarWarFilmRepositoryProtocol.swift */,
+				7C8BE1B12512850900EA25DC /* StarWarFilmDataRepository.swift */,
+				7C8BE1B32512851E00EA25DC /* StarWarFilmRemoteDataSource.swift */,
 			);
 			path = StarWarFilmRepository;
 			sourceTree = "<group>";
@@ -617,12 +638,19 @@
 				7C8BE17D25113AF700EA25DC /* StarWarFilmModel.swift in Sources */,
 				7C8BE1992511F40E00EA25DC /* StarWarCharacterDataRepository.swift in Sources */,
 				7C8BE179251130E300EA25DC /* StarWarCharacterModel.swift in Sources */,
+				7C8BE1B42512851E00EA25DC /* StarWarFilmRemoteDataSource.swift in Sources */,
 				7C8BE1972511E9BA00EA25DC /* StarWarCharacterRepositoryProtocol.swift in Sources */,
+				7C8BE1AC25127C8800EA25DC /* StarWarCharacterDetailsViewController.swift in Sources */,
 				7C8BE17B2511328400EA25DC /* Enums.swift in Sources */,
 				7C8BE19D25120CEC00EA25DC /* Errors.swift in Sources */,
 				7C8BE17F2511446700EA25DC /* StarWarCharaterListModel.swift in Sources */,
+				7C8BE1B22512850900EA25DC /* StarWarFilmDataRepository.swift in Sources */,
 				7C8BE175251112FB00EA25DC /* AppDelegate.swift in Sources */,
+				7C8BE1AA2512626F00EA25DC /* StarWarCharacterListViewController.swift in Sources */,
+				7C8BE1B0251284A200EA25DC /* StarWarFilmRepositoryProtocol.swift in Sources */,
 				7C8BE19B2511F58800EA25DC /* StarWarCharacterRemoteDataSource.swift in Sources */,
+				7C8BE1AE25127CF200EA25DC /* StarWarCharacterDetailsViewModel.swift in Sources */,
+				7C8BE1A825123DC400EA25DC /* StarWarCharacterListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

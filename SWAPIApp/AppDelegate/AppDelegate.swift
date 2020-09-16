@@ -12,24 +12,9 @@ import RxSwift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    let disposeBag = DisposeBag()
-    var dataSource = StarWarCharacterRemoteDataSource()
+    var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-//        dataSource
-//            .fetchCharacters(onPage: 0)
-//            .subscribe(onNext: { (model) in
-//            print(model.characters.count)
-//        }, onError: { (error) in
-//            print(error)
-//        }, onCompleted: {
-//            print("Completed")
-//        }) {
-//            print("Disposed")
-//        }
-//        .disposed(by: disposeBag)
-        
         return true
     }
 

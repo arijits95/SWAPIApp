@@ -18,9 +18,9 @@ enum StarWarAPIEndPoint {
     var url: URL {
         switch self {
         case .characters(let pageNumber):
-            return URL(string: StarWarServerBaseUrl + ((pageNumber == 0) ? "/people/" : "/people/\(pageNumber)"))!
+            return URL(string: StarWarServerBaseUrl + ((pageNumber == 1) ? "/people/" : "/people/?page=\(pageNumber)"))!
         case .filmDetails(let id):
-            return URL(string: StarWarServerBaseUrl + "films/\(id)")!
+            return URL(string: StarWarServerBaseUrl + "/films/\(id)")!
         }
     }
     
