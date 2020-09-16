@@ -8,6 +8,8 @@ target 'SWAPIApp' do
   # Pods for SWAPIApp
   pod 'ObjectMapper'
   pod 'Alamofire', '~> 5.2'
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
 
   target 'SWAPIAppTests' do
     inherit! :search_paths
