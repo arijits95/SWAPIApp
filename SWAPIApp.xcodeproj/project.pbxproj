@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C452760251358CF0087EBFA /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C45275F251358CF0087EBFA /* Font.swift */; };
+		7C452762251359200087EBFA /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C452761251359200087EBFA /* Device.swift */; };
+		7C45276425135BB20087EBFA /* CharacterTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C45276325135BB20087EBFA /* CharacterTVC.swift */; };
+		7C6F9E4625139EA600492831 /* FilmTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6F9E4525139EA600492831 /* FilmTVC.swift */; };
 		7C8BE15525110DCB00EA25DC /* SWAPIAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8BE15425110DCB00EA25DC /* SWAPIAppUITests.swift */; };
 		7C8BE171251112FB00EA25DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BE164251112FB00EA25DC /* LaunchScreen.storyboard */; };
 		7C8BE172251112FB00EA25DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BE165251112FB00EA25DC /* Main.storyboard */; };
@@ -69,6 +73,10 @@
 		408A29C8C656903AAA742567 /* Pods_SWAPIAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWAPIAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BB46E75622B52E1B2FA57F /* Pods-SWAPIAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWAPIAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SWAPIAppTests/Pods-SWAPIAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		586A04D4C74C428B40029512 /* Pods-SWAPIApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWAPIApp.debug.xcconfig"; path = "Target Support Files/Pods-SWAPIApp/Pods-SWAPIApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7C45275F251358CF0087EBFA /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		7C452761251359200087EBFA /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		7C45276325135BB20087EBFA /* CharacterTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTVC.swift; sourceTree = "<group>"; };
+		7C6F9E4525139EA600492831 /* FilmTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTVC.swift; sourceTree = "<group>"; };
 		7C8BE12F25110DC600EA25DC /* SWAPIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWAPIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8BE14525110DCB00EA25DC /* SWAPIAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWAPIAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8BE14B25110DCB00EA25DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -276,7 +284,9 @@
 			isa = PBXGroup;
 			children = (
 				7C8BE1A92512626F00EA25DC /* StarWarCharacterListViewController.swift */,
+				7C45276325135BB20087EBFA /* CharacterTVC.swift */,
 				7C8BE1AB25127C8800EA25DC /* StarWarCharacterDetailsViewController.swift */,
+				7C6F9E4525139EA600492831 /* FilmTVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -330,6 +340,8 @@
 			isa = PBXGroup;
 			children = (
 				7C8BE18F2511D8FA00EA25DC /* String.swift */,
+				7C45275F251358CF0087EBFA /* Font.swift */,
+				7C452761251359200087EBFA /* Device.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -637,8 +649,10 @@
 				7C8BE1A025120D4700EA25DC /* StarWarAPIEndPoint.swift in Sources */,
 				7C8BE17D25113AF700EA25DC /* StarWarFilmModel.swift in Sources */,
 				7C8BE1992511F40E00EA25DC /* StarWarCharacterDataRepository.swift in Sources */,
+				7C452760251358CF0087EBFA /* Font.swift in Sources */,
 				7C8BE179251130E300EA25DC /* StarWarCharacterModel.swift in Sources */,
 				7C8BE1B42512851E00EA25DC /* StarWarFilmRemoteDataSource.swift in Sources */,
+				7C45276425135BB20087EBFA /* CharacterTVC.swift in Sources */,
 				7C8BE1972511E9BA00EA25DC /* StarWarCharacterRepositoryProtocol.swift in Sources */,
 				7C8BE1AC25127C8800EA25DC /* StarWarCharacterDetailsViewController.swift in Sources */,
 				7C8BE17B2511328400EA25DC /* Enums.swift in Sources */,
@@ -648,9 +662,11 @@
 				7C8BE175251112FB00EA25DC /* AppDelegate.swift in Sources */,
 				7C8BE1AA2512626F00EA25DC /* StarWarCharacterListViewController.swift in Sources */,
 				7C8BE1B0251284A200EA25DC /* StarWarFilmRepositoryProtocol.swift in Sources */,
+				7C6F9E4625139EA600492831 /* FilmTVC.swift in Sources */,
 				7C8BE19B2511F58800EA25DC /* StarWarCharacterRemoteDataSource.swift in Sources */,
 				7C8BE1AE25127CF200EA25DC /* StarWarCharacterDetailsViewModel.swift in Sources */,
 				7C8BE1A825123DC400EA25DC /* StarWarCharacterListViewModel.swift in Sources */,
+				7C452762251359200087EBFA /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -823,7 +839,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arijit.SWAPIApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -843,7 +859,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arijit.SWAPIApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

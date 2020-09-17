@@ -8,7 +8,22 @@
 
 import Foundation
 
-enum StarWarError: Error {
+public enum StarWarError: Error {
     case invalidResponseFromServer
     case unknown
+    
+    var errorDescription: String {
+        switch self {
+        case .invalidResponseFromServer: return "Something went wrong. Please try again later."
+        case .unknown: return "Something went wrong. Please try again later."
+        }
+    }
+}
+
+extension Error {
+    
+    public var asStarWarError: StarWarError? {
+        self as? StarWarError
+    }
+    
 }

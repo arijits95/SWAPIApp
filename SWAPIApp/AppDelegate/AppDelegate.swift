@@ -15,6 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let starWarCharacterListViewController = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(identifier: "StarWarCharacterListViewController") as! StarWarCharacterListViewController
+        let viewModel = StarWarCharacterListViewModel(repository: StarWarCharacterDataRepository(remoteDataSource: StarWarCharacterRemoteDataSource()))
+        starWarCharacterListViewController.viewModel = viewModel
+        let navVC = UINavigationController(rootViewController: starWarCharacterListViewController)
+        window?.rootViewController = navVC
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

@@ -31,29 +31,17 @@ class StarWarCharacterModel: Mappable {
     
     func mapping(map: Map) {
         name <- map["name"]
-        birthYear <- map["birth_year"]
-        height <- map["height"]
-        mass <- map["mass"]
+        birthYear <- (map["birth_year"], NA_To_Optional_String_Transform)
+        height <- (map["height"], NA_To_Optional_String_Transform)
+        mass <- (map["mass"], NA_To_Optional_String_Transform)
         hairColor <- (map["hair_color"], NA_To_Optional_String_Transform)
-        skinColor <- map["skin_color"]
-        eyeColor <- map["eye_color"]
+        skinColor <- (map["skin_color"], NA_To_Optional_String_Transform)
+        eyeColor <- (map["eye_color"], NA_To_Optional_String_Transform)
         gender <- (map["gender"], NA_To_Optional_String_Transform)
         filmIds <- (map["films"], Film_Url_To_Id_Transform)
     }
 
 }
-
-//let genderTransform = TransformOf<Gender, String>(fromJSON: { (value: String?) -> Gender? in
-//    if let value = value {
-//        return Gender.getGender(forKey: value)
-//    }
-//    return nil
-//}, toJSON: { (value: Gender?) -> String? in
-//    if let value = value {
-//        return value.rawValue
-//    }
-//    return "n/a"
-//})
 
 let Film_Url_To_Id_Transform = TransformOf<[String], [String]>(fromJSON: { (value: [String]?) -> [String] in
     if let value = value {
@@ -69,7 +57,7 @@ let Film_Url_To_Id_Transform = TransformOf<[String], [String]>(fromJSON: { (valu
 
 let NA_To_Optional_String_Transform = TransformOf<String?, String>(fromJSON: { (value: String?) -> String?? in
     if let value = value {
-        return value == "n/a" ? nil : value
+        return value == "n/a" || value == "unknown" ? nil : value
     }
     return nil
 }, toJSON: { (value: String??) -> String? in
